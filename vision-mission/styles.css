@@ -1,0 +1,77 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#vision-mission {
+    padding: 50px 20px;
+   background-color:white ;
+    color: rgb(10, 0, 0);
+}
+
+.vision-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vision-section-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.vision-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.vision,
+.mission {
+    flex: 1;
+    max-width: 500px;
+    background-image: url(dev.jpg);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#vision-mission h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #000000;
+}
+#vision-mission p,
+ul {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li strong {
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
