@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Offers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        .offers-container {
+            text-align: center;
+        }
+
+        .offers-heading {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .offers-section {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow wrapping for smaller screens */
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .offer-block {
+            position: relative;
+            flex: 1 1 calc(33.33% - 20px);
+            /* 3 blocks per row with gaps */
+            max-width: calc(33.33% - 20px);
+            height: 300px;
+            /* Fixed height for uniformity */
+            background-color: #00796b;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .offer-block:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .offer-block h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .offer-block p {
+            font-size: 1em;
+        }
+
+        .offer-details {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: top 0.4s ease;
+        }
+
+        .offer-block:hover .offer-details {
+            top: 0;
+        }
+
+        .offer-details h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .offer-details ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .offer-details ul li {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .offer-block:nth-child(2) {
+            background-color: #0288d1;
+        }
+
+        .offer-block:nth-child(3) {
+            background-color: #f57c00;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .offer-block {
+                flex: 1 1 calc(50% - 20px);
+                /* 2 blocks per row */
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .offer-block {
+                flex: 1 1 100%;
+                /* 1 block per row */
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="offers-container">
+        <h1 class="offers-heading">What We Offer</h1>
+        <section class="offers-section">
+            <div class="offer-block">
+                <h3>Innovation-Driven Incubation</h3>
+                <p>Empowering ideas with cutting-edge facilities and expert guidance.</p>
+                <div class="offer-details">
+                    <h4>What We Offer:</h4>
+                    <ul>
+                        <li>State-of-the-Art Labs: Access to world-class research, testing, and prototyping facilities
+                            at IIT Dharwad.</li>
+                        <li>Expert Mentorship: Work with industry veterans, biotech leaders, and healthcare
+                            professionals to fine-tune your business and product.</li>
+                        <li>Clinical & Regulatory Support: Navigate clinical trials, FDA approvals, and product
+                            certifications with expert guidance.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offer-block">
+                <h3>Funding & Growth Support</h3>
+                <p>Fueling innovation with financial backing and growth opportunities.</p>
+                <div class="offer-details">
+                    <h4>Funding & Growth Support</h4>
+                    <ul>
+                        <li>Seed Funding: Get the financial backing you need to accelerate your R&D.</li>
+                        <li>Investor Access: Pitch to leading investors, VCs, and government bodies focused on biotech
+                            and health innovations.</li>
+                        <li>Grants & Competitions: Access to exclusive funding opportunities from BIRAC and other
+                            government schemes.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offer-block">
+                <h3>Collaborative Research & Development</h3>
+                <p>Partnering for groundbreaking research and market impact.</p>
+                <div class="offer-details">
+                    <h4>Collaborative Research & Development</h4>
+                    <ul>
+                        <li><strong>Academic Partnerships:</strong> Collaborate with IIT's top-tier researchers and faculty for
+                            groundbreaking R&D.</li>
+                        <li><strong>IP & Commercialization:</strong> Protect your intellectual property and develop strategies for
+                            bringing your innovations to market.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
