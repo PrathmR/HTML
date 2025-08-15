@@ -1,0 +1,49 @@
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.neon-container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+.neon-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.neon-container::before,
+.neon-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5),
+        0 0 40px rgba(0, 255, 255, 0.2),
+        inset 0 0 10px rgba(0, 255, 255, 0.5);
+    animation: neon 2s infinite alternate;
+}
+
+.neon-container::after {
+    filter: hue-rotate(180deg);
+}
+
+@keyframes neon {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
