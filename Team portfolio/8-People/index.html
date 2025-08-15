@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Team</title>
+    <style>
+        .team {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .team-section {
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .team-section h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 22%;
+            text-align: center;
+            padding: 10px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-photo {
+            width: 100px;
+            height: 100px;
+            background-color: #d3d3d3;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .team-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .team-profession {
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .team-member {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-member {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body class="team">
+    <div class="team-section">
+        <h1>Meet Our Team</h1>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-photo">A</div>
+                <div class="team-name">Alice Johnson</div>
+                <div class="team-profession">Research Scientist</div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo">B</div>
+                <div class="team-name">Brian Smith</div>
+                <div class="team-profession">Project Manager</div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo">C</div>
+                <div class="team-name">Catherine Lee</div>
+                <div class="team-profession">Data Analyst</div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo">D</div>
+                <div class="team-name">Daniel Garcia</div>
+                <div class="team-profession">Software Developer</div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo">E</div>
+                <div class="team-name">Emily Brown</div>
+                <div class="team-profession">UI/UX Designer</div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo">F</div>
+                <div class="team-name">Frank Wilson</div>
+                <div class="team-profession">Machine Learning Engineer</div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo">G</div>
+                <div class="team-name">Grace Taylor</div>
+                <div class="team-profession">Biologist</div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo">H</div>
+                <div class="team-name">Henry Davis</div>
+                <div class="team-profession">Physicist</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
