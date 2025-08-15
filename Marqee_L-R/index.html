@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Effect</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            /* Hide content that overflows */
+            background-color: #f0f0f0;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .marquee {
+            display: flex;
+            /* Use flexbox for alignment */
+            white-space: nowrap;
+            /* Prevent wrapping */
+            animation: marquee 20s linear infinite;
+            /* Adjust animation duration as needed */
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+                /* Start from right end outside the container */
+            }
+
+            50% {
+                transform: translateX(-100%);
+                /* Move to left end outside the container */
+            }
+
+            50.1% {
+                transform: translateX(100%);
+                /* Immediately move back to right end */
+            }
+
+            100% {
+                transform: translateX(0);
+                /* End at initial start point */
+            }
+        }
+
+        .block {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="marquee-container">
+        <div class="marquee">
+            <div class="block">Block 1</div>
+            <div class="block">Block 2</div>
+            <div class="block">Block 3</div>
+            <div class="block">Block 4</div>
+            <div class="block">Block 5</div>
+        </div>
+    </div>
+</body>
+
+</html>
