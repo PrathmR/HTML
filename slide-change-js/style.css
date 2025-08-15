@@ -1,0 +1,91 @@
+.sectionsupported {
+    display: flex;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 100%;
+
+
+}
+
+.sectionsupported h2 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.sectors-section {
+    background-color: #7a87ff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.sectors-section:hover {
+    color: #000000;
+}
+
+
+.sector-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: top 0.5s ease-in-out;
+    background-color: #7a87ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.sector-slide img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.sector-slide h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
+.sector-slide p {
+    color: #000000;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.sector-slide p:hover {
+    color: #000000;
+}
+
+.visible {
+    top: 0;
+}
+
+.btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #4148ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
