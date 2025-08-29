@@ -33,9 +33,10 @@ body {
 }
 
 .supporter img {
-    max-width: 100%;
-    height: auto;
+    width: 100px;
+    height:100px;
     border-radius: 50%;
+    background-color: rgb(0, 55, 255);
     transition: transform 0.3s ease;
 }
 
@@ -48,6 +49,8 @@ body {
     font-size: 1rem;
     color: #555;
 }
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
